@@ -1,0 +1,22 @@
+[package]
+name = "ssb-pub"
+version = "0.1.0"
+authors = ["Ben Harris <mail@bharr.is>"]
+
+[dependencies]
+actix-web = { git = "https://github.com/actix/actix-web.git" }
+slog = "2.2.3"
+actix = "0.7.0"
+tokio = "0.1.7"
+futures = "0.1.23"
+serde_derive = "1.0.70"
+serde = "1.0.70"
+
+[dev-dependencies]
+config = "0.9.0"
+listenfd = "0.3.3"
+slog-async = "2.3.0"
+slog-term = "2.4.0"
+slog-stdlog = "3.0.2"
+slog-scope = "4.0.1"
+slog-envlogger = "2.1.0"

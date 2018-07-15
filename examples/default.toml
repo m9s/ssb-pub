@@ -1,0 +1,18 @@
+# Configuration defaults for ssb-pub
+
+# Server section is used for startup of the server binary
+[server]
+# Specify the address and port to bind the server to. This setting is ignored if a socket
+# is passed in by environment (e.g. systemfd).
+bind = "127.0.0.1:3123"
+
+# Specify the default log level. Slog may disable debug and trace during --release compiles.
+log_level = "debug"
+
+# Configuration for the web service
+[web]
+# Message of the day to display on the / route (this is just for coding examples)
+motd = "Hello world!"
+
+# Queue length for streams sent to the web service.
+request_queue = 100
